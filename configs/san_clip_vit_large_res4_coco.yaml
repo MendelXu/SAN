@@ -1,0 +1,10 @@
+_BASE_: san_clip_vit_res4_coco.yaml
+MODEL:
+  SAN:
+    CLIP_RESOLUTION: 0.7
+    CLIP_MODEL_NAME: "ViT-L-14-336"
+    FEATURE_LAST_LAYER_IDX: 18
+  SIDE_ADAPTER:
+    FUSION_MAP: ["0->0", "6->1", "12->2", "18->3"]
+    ATTN_BIAS:
+      NUM_HEADS: 16
