@@ -1,4 +1,4 @@
-# [CVPR2023] Side Adapter Network for Open-Vocabulary Semantic Segmentation
+# [CVPR2023-Highlight] Side Adapter Network for Open-Vocabulary Semantic Segmentation
 
 This is the official implementation of our conference paper : "[Side Adapter Network for Open-Vocabulary Semantic Segmentation](https://arxiv.org/abs/2302.12242)".
 
