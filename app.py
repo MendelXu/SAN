@@ -5,7 +5,7 @@ import gradio as gr
 # set a lot of global variables
 
 predictor = None
-vocabulary = ["bat man"]
+vocabulary = ["bat man, woman"]
 input_image: Image.Image = None
 outputs: dict = None
 cur_model_name: str = None
@@ -99,9 +99,19 @@ with gr.Blocks(
         vis_mode = gr.Dropdown(
             ["overlay", "mask"], label="Visualization Mode", value="overlay"
         )
-    object_names = gr.Textbox(value=",".join(vocabulary), label="Object Names", lines=5)
+    object_names = gr.Textbox(value=",".join(vocabulary), label="Object Names (Empty inputs will use the vocabulary specified in `Vocabulary Expansion`. Multiple names should be seperated with ,.)", lines=5)
 
     button = gr.Button("Run", elem_id="submit")
+    note = gr.Markdown(
+        """
+        ---
+        ### FAQ
+        - **Q**: What is the `Vocabulary Expansion` option for?
+          **A**: The vocabulary expansion option is used to expand the vocabulary of the model. The model assign category to each area with `argmax`. When only a vocabulary with few thing classes is provided, it will produce much false postive.
+        - **Q**: Error: `Unexpected token '<', " <h"... is not valid JSON.`. What should I do?
+            **A**: It is caused by a timeout error. Possibly your image is too large for a CPU server. Please try to use a smaller image or run it locally on a GPU server.
+        """
+        )
     #
 
     object_names.change(set_vocabulary, [object_names], queue=False)
