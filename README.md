@@ -1,7 +1,11 @@
-# [CVPR2023] Side Adapter Network for Open-Vocabulary Semantic Segmentation
+# [CVPR2023-Highlight] Side Adapter Network for Open-Vocabulary Semantic Segmentation
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-2)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-2?p=side-adapter-network-for-open-vocabulary)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-3)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-3?p=side-adapter-network-for-open-vocabulary)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-7)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-7?p=side-adapter-network-for-open-vocabulary)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-1)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-1?p=side-adapter-network-for-open-vocabulary)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-5)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-5?p=side-adapter-network-for-open-vocabulary)
 
 This is the official implementation of our conference paper : "[Side Adapter Network for Open-Vocabulary Semantic Segmentation](https://arxiv.org/abs/2302.12242)".
-
 
 ## Introduction
 
