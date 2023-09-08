@@ -1,3 +1,4 @@
+import warnings
 from torch import nn
 from timm.models.vision_transformer import _create_vision_transformer
 from timm.models import register_model
@@ -16,8 +17,11 @@ class PatchEmbed(nn.Module):
         norm_layer=None,
         flatten=True,
         bias=True,
+        **kwargs
     ):
         super().__init__()
+        if len(kwargs)>0:
+            warnings.warn(f"Unused kwargs are provided:{kwargs}.")
         img_size = to_2tuple(img_size)
         patch_size = to_2tuple(patch_size)
         self.img_size = img_size
