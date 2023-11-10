@@ -82,6 +82,15 @@ datasets/
         images/
         annotations_detectron2/        
 ```
+**Hint** In the code, those datasets are registered with their related dataset names. The relationship is:
+```
+coco_2017_*_stuff_sem_seg : COCO Stuff-171
+voc_sem_seg_*: Pascal VOC-20
+pcontext_sem_seg_*: Pascal Context-59
+ade20k_sem_seg_*: ADE-150
+pcontext_full_sem_seg_*： Pascal Context-459
+ade20k_full_sem_seg_*: ADE-847
+```
 <span id="3"></span>
 
 ### Usage
@@ -91,8 +100,8 @@ datasets/
 
   |Model|Config |Weights|Logs|
   |-----|-------|---|---|
-  |SAN-ViT-B/16|configs/san_clip_vit_res4_coco.yaml |[Huggingface](https://huggingface.co/Mendel192/san/blob/main/san_vit_b_16.pth) |[Log](resources/san_vit_b_16.log)  | 
-  |SAN-ViT-L/14|configs/san_clip_vit_large_res4_coco.yaml |[Huggingface](https://huggingface.co/Mendel192/san/blob/main/san_vit_large_14.pth) |[Log](resources/san_vit_large_14.log)|
+  |SAN-ViT-B/16|configs/san_clip_vit_res4_coco.yaml |[Huggingface](https://huggingface.co/Mendel192/san/resolve/main/san_vit_b_16.pth) |[Log](resources/san_vit_b_16.log)  | 
+  |SAN-ViT-L/14|configs/san_clip_vit_large_res4_coco.yaml |[Huggingface](https://huggingface.co/Mendel192/san/resolve/main/san_vit_large_14.pth) |[Log](resources/san_vit_large_14.log)|
 
 
 - #### Evaluation 
