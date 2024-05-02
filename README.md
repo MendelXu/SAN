@@ -154,7 +154,7 @@ ade20k_full_sem_seg_*: ADE-847
 
 ### FAQ
 
-<span id="7"></span>
+<span id="8"></span>
 
 If you found it is too late to get a response from the author on the github, please e-mail me directly at [shea.mendel] [AT] [gmail.com].
 
