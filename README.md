@@ -21,8 +21,9 @@ Our approach is fast, accurate, and only adds a few additional trainable paramet
 - [Usage](#3)
   - [Training](#5)
   - [Evaluation](#4)
-  - [Visulization](#6)
+  - [Visualization](#7)
   <!-- - [Visualization](#5) -->
+- [FAQ](#8)
 
 <span id="6"></span>
 
@@ -128,7 +129,7 @@ ade20k_full_sem_seg_*: ADE-847
 
 - #### Visualization
 
-  <span id="6"></span>
+  <span id="7"></span>
 
   ```sh
   python visualize_json_results.py --input <JSON_RESULT> --output <WHERE TO  SAVE VISUALIZATION RESULT> --dataset <DATASET>
@@ -150,11 +151,12 @@ ade20k_full_sem_seg_*: ADE-847
     python train_net.py --config-file <CONFIG_FILE> --num-gpus <NUM_GPU> OUTPUT_DIR <OUTPUT_PATH> WANDB.NAME <WANDB_LOG_NAME>
     ```
   **Hint**: We use `<>` to denote the variables you should replace according to your own setting.
-  
-### TODO
-  - Add detailed description of the dataset preparation process.
-  - Transfer and test cross attention implementation.
-  - Add support to flash attention.
+
+### FAQ
+
+<span id="7"></span>
+
+If you found it is too late to get a response from the author on the github, please e-mail me directly at [shea.mendel] [AT] [gmail.com].
 
 ### License
 Distributed under the MIT License. See LICENSE for more information.
