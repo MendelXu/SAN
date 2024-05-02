@@ -6,8 +6,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-1)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-1?p=side-adapter-network-for-open-vocabulary)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/side-adapter-network-for-open-vocabulary/open-vocabulary-semantic-segmentation-on-5)](https://paperswithcode.com/sota/open-vocabulary-semantic-segmentation-on-5?p=side-adapter-network-for-open-vocabulary)
 
-This is the official implementation of our conference paper : "[Side Adapter Network for Open-Vocabulary Semantic Segmentation](https://arxiv.org/abs/2302.12242)" and journal paper: "[SAN: Side Adapter Network for Open-Vocabulary Semantic Segmentation
-](https://www.computer.org/csdl/journal/tp/2023/12/10238837/1QaEJ3q98aY)".
+This is the official implementation of our conference paper : "[Side Adapter Network for Open-Vocabulary Semantic Segmentation](https://arxiv.org/abs/2302.12242)" (main branch) and journal paper: "[SAN: Side Adapter Network for Open-Vocabulary Semantic Segmentation
+](https://www.computer.org/csdl/journal/tp/2023/12/10238837/1QaEJ3q98aY)" (video branch).
 
 ## Introduction
 
