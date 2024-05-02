@@ -93,7 +93,7 @@ class Predictor(object):
         self,
         image_data_or_path: Union[Image.Image, str],
         vocabulary: List[str] = [],
-        augment_vocabulary: Union[str,bool] = True,
+        augment_vocabulary: Union[str, bool] = True,
         output_file: str = None,
     ) -> Union[dict, None]:
         """
@@ -118,7 +118,7 @@ class Predictor(object):
         print("vocabulary:", vocabulary)
         ori_vocabulary = vocabulary
 
-        if isinstance(augment_vocabulary,str):
+        if isinstance(augment_vocabulary, str):
             vocabulary = self.augment_vocabulary(vocabulary, augment_vocabulary)
         else:
             vocabulary = self._merge_vocabulary(vocabulary)

@@ -4,3 +4,4 @@ from . import (
     register_pcontext,
     register_voc,
 )
+from .video import *

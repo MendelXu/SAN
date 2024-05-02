@@ -99,7 +99,11 @@ with gr.Blocks(
         vis_mode = gr.Dropdown(
             ["overlay", "mask"], label="Visualization Mode", value="overlay"
         )
-    object_names = gr.Textbox(value=",".join(vocabulary), label="Object Names (Empty inputs will use the vocabulary specified in `Vocabulary Expansion`. Multiple names should be seperated with ,.)", lines=5)
+    object_names = gr.Textbox(
+        value=",".join(vocabulary),
+        label="Object Names (Empty inputs will use the vocabulary specified in `Vocabulary Expansion`. Multiple names should be seperated with ,.)",
+        lines=5,
+    )
 
     button = gr.Button("Run", elem_id="submit")
     note = gr.Markdown(
@@ -111,7 +115,7 @@ with gr.Blocks(
         - **Q**: Error: `Unexpected token '<', " <h"... is not valid JSON.`. What should I do?
             **A**: It is caused by a timeout error. Possibly your image is too large for a CPU server. Please try to use a smaller image or run it locally on a GPU server.
         """
-        )
+    )
     #
 
     object_names.change(set_vocabulary, [object_names], queue=False)

@@ -17,10 +17,10 @@ class PatchEmbed(nn.Module):
         norm_layer=None,
         flatten=True,
         bias=True,
-        **kwargs
+        **kwargs,
     ):
         super().__init__()
-        if len(kwargs)>0:
+        if len(kwargs) > 0:
             warnings.warn(f"Unused kwargs are provided:{kwargs}.")
         img_size = to_2tuple(img_size)
         patch_size = to_2tuple(patch_size)

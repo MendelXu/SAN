@@ -12,6 +12,10 @@ def add_san_config(cfg):
     cfg.INPUT.CROP.SINGLE_CATEGORY_MAX_AREA = 1.0
     # Pad image and segmentation GT in dataset mapper.
     cfg.INPUT.SIZE_DIVISIBILITY = -1
+    # video data
+    cfg.INPUT.SAMPLING_FRAME_NUM = 2
+    cfg.INPUT.SAMPLING_FRAME_RANGE = 20
+    cfg.INPUT.SAMPLING_FRAME_SHUFFLE = False
 
     # solver config
     # optimizer
@@ -51,7 +55,8 @@ def add_san_config(cfg):
     cfg.MODEL.SAN.SIZE_DIVISIBILITY = 32
     cfg.MODEL.SAN.ASYMETRIC_INPUT = True
     cfg.MODEL.SAN.CLIP_RESOLUTION = 0.5
-
+    # for video
+    cfg.MODEL.SAN.N_CLUSTERS = 100
     cfg.MODEL.SAN.SEM_SEG_POSTPROCESS_BEFORE_INFERENCE = True
     # side adapter
     cfg.MODEL.SIDE_ADAPTER = CN()
