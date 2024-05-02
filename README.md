@@ -19,6 +19,7 @@ Our approach is fast, accurate, and only adds a few additional trainable paramet
 - [Usage](#3)
   - [Training](#5)
   - [Evaluation](#4)
+  - [Visulization](#6)
   <!-- - [Visualization](#5) -->
 
 <span id="6"></span>
@@ -122,6 +123,20 @@ ade20k_full_sem_seg_*: ADE-847
   ```sh
   python train_net.py --eval-only --config-file <CONFIG_FILE> --num-gpus <NUM_GPU> OUTPUT_DIR <OUTPUT_PATH> MODEL.WEIGHTS <TRAINED_MODEL_PATH> DATASETS.TEST "('<FILL_DATASET_NAME_HERE>',)"
   ```
+
+- #### Visualization
+
+  <span id="6"></span>
+
+  ```sh
+  python visualize_json_results.py --input <JSON_RESULT> --output <WHERE TO  SAVE VISUALIZATION RESULT> --dataset <DATASET>
+  # example:
+  # Generate the results.
+  # python train_net.py --eval-only --config-file configs/san_clip_vit_res4_coco.yaml --num-gpus 1 OUTPUT_DIR ./output/trained_vit_b16 MODEL.WEIGHTS output/san/san_vit_b_16.pth DATASETS.TEST '("pcontext_sem_seg_val",)'
+  # Visualizing
+  # python visualize_json_results.py --input output/trained_vit_b16/inference/sem_seg_predictions.json --output output/viz --dataset pcontext_sem_seg_val
+  ```
+
 <span id="5"></span>
 - #### Training
   
