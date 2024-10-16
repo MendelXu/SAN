@@ -172,6 +172,14 @@ If you find it helpful, you can cite our paper in your work.
   journal={CVPR},
   year={2023}
 }
+
+@article{xu2023san,
+  title={SAN: Side adapter network for open-vocabulary semantic segmentation},
+  author={Xu, Mengde and Zhang, Zheng and Wei, Fangyun and Hu, Han and Bai, Xiang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2023},
+  publisher={IEEE}
+}
 ```
 
 
